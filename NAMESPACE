@@ -1,0 +1,7 @@
+import(igraph, ggplot2, ggrepel, devtools, grDevices)
+importFrom("stats","rnorm","sd","var","qnorm","lm","fitted","reorder")
+importFrom("grDevices", "dev.off", "pdf")
+importFrom("graphics", "par", "plot")
+importFrom("utils", "data","read.table", "write.table")
+exportPattern("^[^\\.]")
+
