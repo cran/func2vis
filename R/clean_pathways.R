@@ -19,7 +19,7 @@ clean_pathways <- function(df_case_vs_ctrl, df_pathway)
 {
   #Gene gene names as character and FC into binary based on >1 cutoff
   df_case_vs_ctrl$Genes <- as.character(as.vector(df_case_vs_ctrl$gene))
-  df_case_vs_ctrl$Status <- as.numeric(as.vector(df_case_vs_ctrl$fc>1))
+  df_case_vs_ctrl$Status <- as.numeric(as.vector(df_case_vs_ctrl$fc>0))
   
   # Convert factors to string 
   df_pathway$pathway <- as.character(as.vector(df_pathway$pathway));

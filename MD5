@@ -1,8 +1,8 @@
-3f50739291d07e7c1c2a886d075ed83c *DESCRIPTION
+1f98c270edb53dcaa5042ab9d6cc338c *DESCRIPTION
 5d28e636d175a4903fa619ebcbb391b1 *NAMESPACE
-301c6018df846ae03e4e4eb65981ddf8 *R/clean_go_terms.R
-8d7297c55e533d8f18043f356e106245 *R/clean_pathways.R
-57277bf84fc4cb4f75170f9fa0ac5bb7 *R/clean_pc.R
+fa218eacce393ba2a1285bfe0daa4d5e *R/clean_go_terms.R
+1bd5361a8109323eeab19e8c264ffea3 *R/clean_pathways.R
+5f644a3deff7b6fe1a16b06784287b1f *R/clean_pc.R
 70b577ca60b91e821de4abd47056d818 *R/plot_go_terms.R
 bf86bcc1511d8899c22935dd8ad226cc *R/plot_pathways.R
 f3ed354fea457aa03b27228ad1b6c1ca *R/plot_pathways_stacked_barplot.R

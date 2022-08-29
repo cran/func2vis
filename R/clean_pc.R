@@ -21,7 +21,7 @@ clean_pc <- function(df_case_vs_ctrl,df_pc)
   
   #Gene gene names as character and FC into binary based on >1 cutoff
   df_case_vs_ctrl$Genes <- as.character(as.vector(df_case_vs_ctrl$gene))
-  df_case_vs_ctrl$Status <- as.numeric(as.vector(df_case_vs_ctrl$fc>1))
+  df_case_vs_ctrl$Status <- as.numeric(as.vector(df_case_vs_ctrl$fc>0))
   
   #Convert factors to string variables
   df_pc$complex_name <- as.character(as.vector(df_pc$complex_name));

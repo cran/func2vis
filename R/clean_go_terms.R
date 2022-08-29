@@ -20,7 +20,7 @@ clean_go_terms <- function(df_case_vs_ctrl, df_goterms)
 {
   #Gene gene names as character and FC into binary based on >1 cutoff
   df_case_vs_ctrl$Genes <- as.character(as.vector(df_case_vs_ctrl$gene))
-  df_case_vs_ctrl$Status <- as.numeric(as.vector(df_case_vs_ctrl$fc>1))
+  df_case_vs_ctrl$Status <- as.numeric(as.vector(df_case_vs_ctrl$fc>0))
 
   #Convert factors into strings
   df_goterms$term_goid <- as.character(as.vector(df_goterms$term_goid));
