@@ -1,11 +1,11 @@
-1f98c270edb53dcaa5042ab9d6cc338c *DESCRIPTION
-5d28e636d175a4903fa619ebcbb391b1 *NAMESPACE
+1d0f6504321cac2b39286161e258f05f *DESCRIPTION
+ff5be85b3f9a8274bee2e9ce1db2a5a9 *NAMESPACE
 fa218eacce393ba2a1285bfe0daa4d5e *R/clean_go_terms.R
-1bd5361a8109323eeab19e8c264ffea3 *R/clean_pathways.R
+45f8ca9c9d29b8f918acb665a36e6409 *R/clean_pathways.R
 5f644a3deff7b6fe1a16b06784287b1f *R/clean_pc.R
-70b577ca60b91e821de4abd47056d818 *R/plot_go_terms.R
-bf86bcc1511d8899c22935dd8ad226cc *R/plot_pathways.R
-f3ed354fea457aa03b27228ad1b6c1ca *R/plot_pathways_stacked_barplot.R
+6d70c6bdcd33e7762ac1a61c122e4f16 *R/plot_go_terms.R
+346102c29fdb7b31a14f7da136a84396 *R/plot_pathways.R
+b989aa4096f230e45a1db46854c695bf *R/plot_pathways_stacked_barplot.R
 3a1ea2f33bc3f92798005050c0b947d5 *data/enriched_goterms.rda
 e1de099f527e1e79651ef0d8b6f22785 *data/enriched_pathways.rda
 49a7239812520ddb7dc4aafec2380330 *data/enriched_pc.rda
@@ -16,7 +16,7 @@ bd685a3e2ac1775d74cb2a81e63a6261 *man/clean_pc.Rd
 4efd7d2656084c61664a765bead50fc8 *man/enriched_goterms.Rd
 dff02f87d988fea565f1b8652a04f1f1 *man/enriched_pathways.Rd
 2f19e6ad05a7e754f2e13989cf391a2e *man/enriched_pc.Rd
-5dd92380cbf2721e1fba13090fda7aa4 *man/plot_go_terms.Rd
+bcbaa9d7c8dc147c209cb4b14b47d2a8 *man/plot_go_terms.Rd
 86c745195b7219d4e15c0d0ad4a53987 *man/plot_pathways.Rd
 46a65077fec6c4dbe2e9668e326b2166 *man/plot_pathways_stacked_barplot.Rd
 49bb1ebf37ea0eac9393a97557f4827f *man/t.tests.treatment.sign.Rd

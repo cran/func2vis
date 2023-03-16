@@ -1,4 +1,4 @@
-import(igraph, ggplot2, ggrepel, devtools, grDevices)
+import(igraph, ggplot2, ggrepel, devtools, grDevices, randomcoloR)
 importFrom("stats","rnorm","sd","var","qnorm","lm","fitted","reorder")
 importFrom("grDevices", "dev.off", "pdf")
 importFrom("graphics", "par", "plot")

@@ -8,7 +8,8 @@ Bupple Plot for GO Terms
 Make a bubble plot for significantly enriched Gene Ontologies (GO) Terms obtained after performing gene set overexpression analysis using 'ConsensusPathDB'. 
 }
 \usage{
-plot_go_terms(df_goterms, total_no_background_genes, negative_log_10_p_value_cutoff)
+plot_go_terms(df_goterms, total_no_background_genes, 
+              negative_log_10_p_value_cutoff, max_overlap)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -20,7 +21,10 @@ plot_go_terms(df_goterms, total_no_background_genes, negative_log_10_p_value_cut
   }
   \item{negative_log_10_p_value_cutoff}{
   The threshold on -log10(pvalue) to be used to identify the GO terms to be highlighted in the plot.
-}
+  }
+  \item{max_overlap}{
+  To prevent overlapping text, set this paramater to a number >= 20.
+  }
 }
 \details{
 Plots the significantly enriched molecular function (m), cellular components (c) and biological processes (b) obtained via ConsensusPathDB.

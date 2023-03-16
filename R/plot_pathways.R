@@ -44,7 +44,11 @@ plot_pathways <- function(final_df_pathway, total_no_background_genes=22400, fon
   output_df_pathway <- output_df_pathway[,c(4,3,11,12,1,2,5,6,10,9,13,14)]
   
   #Color and order the pathways based on generatio
-  colors <- c('#3cb44b', '#4363d8', '#f58231', '#911eb4', '#f032e6', '#46f0f0' , '#bcf60c', '#a9a9a9', '#e6194b', '#ffe119', '#ffe119', '#e6beff')
+  #colors <- c('#3cb44b', '#4363d8', '#f58231', '#911eb4', '#f032e6', '#46f0f0' , '#bcf60c', '#a9a9a9', '#e6194b', '#ffe119', '#ffe119', '#e6beff')
+  #color = grDevices::colors()[grep('gr(a|e)y', grDevices::colors(), invert = T)]
+  #colors = sample(color, length(unique(output_df_pathway$clusters)))
+  n <- length(unique(output_df_pathway$clusters))
+  colors <- distinctColorPalette(n)
   output_df_pathway$Description <- paste0(output_df_pathway$Description," [ ",output_df_pathway$GeneRatio," ] ")
   unique_generatios <- unique(output_df_pathway$generatio)
   
@@ -72,7 +76,7 @@ plot_pathways <- function(final_df_pathway, total_no_background_genes=22400, fon
     theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
     ggtitle("Enriched Pathways") + theme(text = element_text(size=16,color="black")) + 
     theme(axis.text = element_text(size=fontsize, color="black")) + theme(plot.title = element_text(hjust = 0.5,color="black")) +
-    theme(axis.text.y=element_text(color=colors[output_df_pathway$clusters]))
+    theme(axis.text.y=element_text(colour=colors[output_df_pathway$clusters]))
   
   return(p)
 }

@@ -49,9 +49,10 @@ plot_pathways_stacked_barplot <- function(final_df_pathway)
   pvaluelabs <- factor(round(-log10(plot_df$p.value+.Machine$double.eps),2),levels=unique(round(-log10(plot_df$p.value+.Machine$double.eps),2)))
   cluster <- plot_df$clusters;
   n <- length(unique(cluster))
-  color_palette = grDevices::colors()[grep('gr(a|e)y', grDevices::colors(), invert = T)]
-  color_palette = color_palette[-grep("white",color_palette)]
-  color_palette = color_palette[sample(length(color_palette))]
+  #color_palette = grDevices::colors()[grep('gr(a|e)y', grDevices::colors(), invert = T)]
+  #color_palette = color_palette[-grep("white",color_palette)]
+  #color_palette = color_palette[sample(length(color_palette))]
+  color_palette = distinctColorPalette(n)
   palette <- color_palette[1:n]
   Pathways <- final_plot_df$Pathways
   Genes_Type <- final_plot_df$Genes_Type

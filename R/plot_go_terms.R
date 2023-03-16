@@ -15,7 +15,7 @@
 
 #    You should have received a copy of the GNU General Public License
 #    along with this program, see LICENSE.
-plot_go_terms <- function(df_goterms, total_no_background_genes=22400, negative_log_10_p_value_cutoff = 3)
+plot_go_terms <- function(df_goterms, total_no_background_genes=22400, negative_log_10_p_value_cutoff = 3, max_overlap = 20)
 {
   #Convert factors to strings
   df_goterms$term_goid <- as.character(as.vector(df_goterms$term_goid));
@@ -72,6 +72,7 @@ plot_go_terms <- function(df_goterms, total_no_background_genes=22400, negative_
     geom_label_repel(data=temp_df, aes(label = term_name, x=100*generatio, y=-log10(p.value)),
                      box.padding   = 0.35,
                      point.padding = 0.5,
+                     max.overlaps = max_overlap,
                      segment.color = 'grey50') +
     theme(text = element_text(size=20)) + theme(plot.title = element_text(hjust = 0.5))
    return(g)

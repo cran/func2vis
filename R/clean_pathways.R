@@ -145,6 +145,6 @@ clean_pathways <- function(df_case_vs_ctrl, df_pathway)
   final_df_pathway$genes_up <- as.numeric(as.vector(final_df_pathway$genes_up))
   final_df_pathway$genes_down <- as.numeric(as.vector(final_df_pathway$genes_down))
   final_df_pathway$clusters  <- as.numeric(as.vector(final_df_pathway$clusters))
-
+  rownames(final_df_pathway) <- NULL
   return(final_df_pathway)
 }
